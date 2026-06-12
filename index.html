@@ -4,19 +4,147 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Stats Football</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
+}
+
+body{
+background:#0f172a;
+color:white;
+}
+
+header{
+background:#111827;
+padding:20px;
+text-align:center;
+}
+
+header h1{
+font-size:32px;
+}
+
+nav{
+display:flex;
+justify-content:center;
+gap:20px;
+padding:15px;
+background:#1e293b;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+font-weight:bold;
+}
+
+.container{
+max-width:1200px;
+margin:auto;
+padding:20px;
+}
+
+.card{
+background:#1e293b;
+padding:20px;
+border-radius:15px;
+margin-bottom:20px;
+}
+
+.match{
+display:flex;
+justify-content:space-between;
+padding:10px 0;
+border-bottom:1px solid #334155;
+}
+
+.match:last-child{
+border-bottom:none;
+}
+
+.score{
+font-weight:bold;
+color:#22c55e;
+}
+
+footer{
+text-align:center;
+padding:20px;
+background:#111827;
+margin-top:30px;
+}
+</style>
 </head>
+
 <body>
+
+<header>
 <h1>⚽🎾🏀 Stats Football</h1>
-<p>Bienvenido a Stats Football.</p>
+<p>Resultados y estadísticas deportivas</p>
+</header>
 
-<h2>Deportes</h2>
-<ul>
-<li>Fútbol</li>
-<li>Tenis</li>
-<li>NBA</li>
-</ul>
+<nav>
+<a href="#">Fútbol</a>
+<a href="#">Tenis</a>
+<a href="#">NBA</a>
+</nav>
 
-<h2>Próximamente</h2>
-<p>Resultados en vivo, estadísticas completas y calendario deportivo.</p>
+<div class="container">
+
+<div class="card">
+<h2>⚽ Partidos de Hoy</h2>
+
+<div class="match">
+<span>Real Madrid vs Barcelona</span>
+<span class="score">2 - 1</span>
+</div>
+
+<div class="match">
+<span>Manchester City vs Arsenal</span>
+<span class="score">1 - 1</span>
+</div>
+
+</div>
+
+<div class="card">
+<h2>🎾 Tenis</h2>
+
+<div class="match">
+<span>Alcaraz vs Sinner</span>
+<span class="score">6-4 | 6-3</span>
+</div>
+
+<div class="match">
+<span>Djokovic vs Medvedev</span>
+<span class="score">7-5 | 6-4</span>
+</div>
+
+</div>
+
+<div class="card">
+<h2>🏀 NBA</h2>
+
+<div class="match">
+<span>Lakers vs Celtics</span>
+<span class="score">110 - 105</span>
+</div>
+
+<div class="match">
+<span>Warriors vs Nuggets</span>
+<span class="score">118 - 115</span>
+</div>
+
+</div>
+
+</div>
+
+<footer>
+Stats Football © 2025
+</footer>
+
 </body>
 </html>
